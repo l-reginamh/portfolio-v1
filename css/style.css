@@ -516,13 +516,13 @@ body {
 
 @media only screen and (max-width: 600px) {
     #home .block-text {
-        left: 0px;
-        opacity: 100%;
+        left: 0px!important;
+        opacity: 100%!important;
     }
     
     #home .block-button-round {
-        right: 0px;
-        opacity: 100%;
+        right: 0px!important;
+        opacity: 100%!important;
     }
 }
 
