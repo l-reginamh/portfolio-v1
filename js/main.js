@@ -7,6 +7,12 @@ $(document).ready(function(){
         $('.moveTo90, .moveTo80, .moveTo75, .moveTo70, .moveTo65, .moveTo60, .moveTo50').css("animation-play-state", "running");
         $('.backToTop').css('opacity', '100%');
     }
+    
+    var width = window.innerWidth;
+    if(width < 600){
+        $('#text').removeClass('moveRight');
+        $('#text').next().removeClass('moveLeft');
+    }
 
     $(window).scroll(function(){
         var scroll=$(this).scrollTop();
@@ -20,13 +26,13 @@ $(document).ready(function(){
 
     $(window).resize(function(){
         var w = window.innerWidth;
-var h = window.innerHeight;
-var ow = window.outerWidth; //including toolbars and status bar etc.
-var oh = window.outerHeight;
         console.log(w)
         if(w < 600){
             $('#text').removeClass('moveRight');
             $('#text').next().removeClass('moveLeft');
+        } else {
+            $('#text').addClass('moveRight');
+            $('#text').next().addClass('moveLeft');
         }
     })
 
