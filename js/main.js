@@ -24,7 +24,7 @@ var h = window.innerHeight;
 var ow = window.outerWidth; //including toolbars and status bar etc.
 var oh = window.outerHeight;
         console.log(w)
-        if(w > 600){
+        if(w < 600){
             $('#text').removeClass('moveRight');
             $('#text').next().removeClass('moveLeft');
         }

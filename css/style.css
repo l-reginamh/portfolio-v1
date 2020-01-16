@@ -514,6 +514,18 @@ body {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #home .block-text {
+        left: 0px;
+        opacity: 100%;
+    }
+    
+    #home .block-button-round {
+        right: 0px;
+        opacity: 100%;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .block-desc, .block-bars {
         width: 300px;
