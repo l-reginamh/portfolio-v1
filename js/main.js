@@ -18,16 +18,17 @@ $(document).ready(function(){
         }
     });
 
-//     $(window).resize(function(){
-//         var w = window.innerWidth;
-// var h = window.innerHeight;
-// var ow = window.outerWidth; //including toolbars and status bar etc.
-// var oh = window.outerHeight;
-//         console.log(w)
-//         if(w > 600){
-//             $('#text').removeClass('moveRight');
-//         }
-//     })
+    $(window).resize(function(){
+        var w = window.innerWidth;
+var h = window.innerHeight;
+var ow = window.outerWidth; //including toolbars and status bar etc.
+var oh = window.outerHeight;
+        console.log(w)
+        if(w > 600){
+            $('#text').removeClass('moveRight');
+            $('#text').next().removeClass('moveLeft');
+        }
+    })
 
     function onload(){
 
