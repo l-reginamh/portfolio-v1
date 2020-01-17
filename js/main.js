@@ -5,22 +5,23 @@ $(document).ready(function(){
     var currentHeight=$(this).scrollTop();
     if(currentHeight >= 400) {
         $('.moveTo90, .moveTo80, .moveTo75, .moveTo70, .moveTo65, .moveTo60, .moveTo50').css("animation-play-state", "running");
-        $('.backToTop').css('opacity', '100%');
     }
     
     var width = window.innerWidth;
     if(width < 600){
-        $('#text').removeClass('moveRight');
-        $('#text').next().removeClass('moveLeft');
+        // $('#text').removeClass('moveRight');
+        // $('#text').next().removeClass('moveLeft');    
     }
 
     $(window).scroll(function(){
         var scroll=$(this).scrollTop();
         if(scroll >= 400) {
             $('.moveTo90, .moveTo80, .moveTo75, .moveTo70, .moveTo65, .moveTo60, .moveTo50').css("animation-play-state", "running");
-            $('.backToTop').css('opacity', '100%');
+            $('.backToTop').css('opacity', '1');
+            $('.backToTop').css('display', 'block');
         } else {
-            $('.backToTop').css('opacity', '0%');
+            $('.backToTop').css('opacity', '0');
+            $('.backToTop').css('display', 'none');
         }
     });
 
@@ -35,6 +36,78 @@ $(document).ready(function(){
             $('#text').next().addClass('moveLeft');
         }
     })
+
+    var p1 = document.getElementById("portfolio1");
+    var btn1 = document.getElementById("open-portfolio1");
+    var close1 = document.getElementById("close-portfolio1");
+
+    btn1.onclick = function() {
+        p1.style.display = "block";
+    }
+
+    close1.onclick = function() {
+        p1.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == p1) {
+            p1.style.display = "none";
+        }
+    }
+
+    var p2 = document.getElementById("portfolio2");
+    var btn2 = document.getElementById("open-portfolio2");
+    var close2 = document.getElementById("close-portfolio2");
+
+    btn2.onclick = function() {
+        p2.style.display = "block";
+    }
+
+    close2.onclick = function() {
+        p2.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == p2) {
+            p2.style.display = "none";
+        }
+    }
+
+    var p3 = document.getElementById("portfolio3");
+    var btn3 = document.getElementById("open-portfolio3");
+    var close3 = document.getElementById("close-portfolio3");
+
+    btn3.onclick = function() {
+        p3.style.display = "block";
+    }
+
+    close3.onclick = function() {
+        p3.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == p3) {
+            p3.style.display = "none";
+        }
+    }
+
+    var p4 = document.getElementById("portfolio4");
+    var btn4 = document.getElementById("open-portfolio4");
+    var close4 = document.getElementById("close-portfolio4");
+
+    btn4.onclick = function() {
+        p4.style.display = "block";
+    }
+
+    close4.onclick = function() {
+        p4.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == p4) {
+            p4.style.display = "none";
+        }
+    }
 
     function onload(){
 
