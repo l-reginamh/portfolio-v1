@@ -315,6 +315,7 @@ body {
 
 .block-modal {
     display: none;
+    opacity: 0;
     position: fixed;
     z-index: 20;
     left: 0;

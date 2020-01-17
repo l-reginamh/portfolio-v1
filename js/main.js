@@ -43,15 +43,18 @@ $(document).ready(function(){
 
     btn1.onclick = function() {
         p1.style.display = "block";
+        p1.style.opacity = "1";
     }
 
     close1.onclick = function() {
         p1.style.display = "none";
+        p1.style.opacity = "0";
     }
 
     window.onclick = function(event) {
         if (event.target == p1) {
             p1.style.display = "none";
+            p1.style.opacity = "0";
         }
     }
 
@@ -61,15 +64,18 @@ $(document).ready(function(){
 
     btn2.onclick = function() {
         p2.style.display = "block";
+        p2.style.opacity = "1";
     }
 
     close2.onclick = function() {
         p2.style.display = "none";
+        p2.style.opacity = "0";
     }
 
     window.onclick = function(event) {
         if (event.target == p2) {
             p2.style.display = "none";
+            p2.style.opacity = "0";
         }
     }
 
@@ -79,15 +85,18 @@ $(document).ready(function(){
 
     btn3.onclick = function() {
         p3.style.display = "block";
+        p3.style.opacity = "1";
     }
 
     close3.onclick = function() {
         p3.style.display = "none";
+        p3.style.opacity = "0";
     }
 
     window.onclick = function(event) {
         if (event.target == p3) {
             p3.style.display = "none";
+            p3.style.opacity = "0";
         }
     }
 
@@ -97,15 +106,18 @@ $(document).ready(function(){
 
     btn4.onclick = function() {
         p4.style.display = "block";
+        p4.style.opacity = "1";
     }
 
     close4.onclick = function() {
         p4.style.display = "none";
+        p4.style.opacity = "0";
     }
 
     window.onclick = function(event) {
         if (event.target == p4) {
             p4.style.display = "none";
+            p4.style.opacity = "0";
         }
     }
 
