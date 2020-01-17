@@ -709,6 +709,10 @@ body {
     .block-desc, .block-bars {
         width: 500px;
     }
+
+    .block-modal-content {
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 700px) {
