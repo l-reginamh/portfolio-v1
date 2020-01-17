@@ -711,7 +711,9 @@ body {
     }
 
     .block-modal-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+
     }
 }
 
@@ -723,19 +725,11 @@ body {
     .block-desc, .block-bars {
         width: 400px;
     }
-}
 
-/* @media only screen and (max-width: 600px) {
-    #home .block-text {
-        left: 0px;
-        opacity: 1;
+    .block-modal-content {
+        flex-direction: column;
     }
-    
-    #home .block-button-round {
-        right: 0px;
-        opacity: 1;
-    }
-} */
+}
 
 @media only screen and (max-width: 500px) {
     .block-desc, .block-bars {
@@ -769,6 +763,10 @@ body {
 
     .block-value {
         font-size: 12px;
+    }
+
+    .block-modal-content {
+        flex-direction: column;
     }
 }
 
