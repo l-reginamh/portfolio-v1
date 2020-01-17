@@ -711,9 +711,8 @@ body {
     }
 
     .block-modal-content {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: flex-end;
-
     }
 }
 
@@ -724,10 +723,6 @@ body {
 
     .block-desc, .block-bars {
         width: 400px;
-    }
-
-    .block-modal-content {
-        flex-direction: column;
     }
 }
 
@@ -763,10 +758,6 @@ body {
 
     .block-value {
         font-size: 12px;
-    }
-
-    .block-modal-content {
-        flex-direction: column;
     }
 }
 
